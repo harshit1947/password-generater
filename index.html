@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h2>Password Generater</h2>
+            <!-- show password and copied btn -->
+            <div class="show-pass">
+                <input type="text" readonly placeholder="Password" id="password">
+                <div class="copied-sec"></div>
+                <div class="copied-sec-btn">
+                    <button id="copy-btn">Copy</button>
+                </div>
+            </div>
+            <!-- main section -->
+            <div class="main-section">
+                <div class="length-sec">
+                    <p>Password Length</p>
+                    <div class="length-value">10</div>
+                </div>
+                <div class="slider-sec">
+                    <input type="range" min="1" max="20" value="10">
+                </div>
+                <div class="cent upper-case">
+                    <input type="checkbox" name="upperCase" id="upperCase">
+                    <label for="upperCase">Include Uppercase letters</label>
+                </div>
+                <div class="cent lower-case">
+                    <input type="checkbox" name="lowerCase" id="lowerCase">
+                    <label for="lowerCase">Include Lowercase letters</label>
+                </div>
+                <div class="cent number-case">
+                    <input type="checkbox" name="numberCase" id="numberCase">
+                    <label for="numberCase">Include numbers</label>
+                </div>
+                <div class="cent symbol-case">
+                    <input type="checkbox" name="symbolCase" id="symbolCase">
+                    <label for="symbolCase">Include Symbols</label>
+                </div>
+                <!-- strength section -->
+                <div class="strength-sec">
+                    <div class="strength-name ">Strength</div>
+                    <span class="light"></span>
+                </div>
+                <!-- genetrate button -->
+                <div class="generate-btn-sec cent">
+                    <button  id="generateButton">Generate Password</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
